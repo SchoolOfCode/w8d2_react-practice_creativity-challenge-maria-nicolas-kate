@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.header-title {
+  background-color: #438a9d;
+  color: #fff;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.total-counter {
+  color: #30616e;
+  font-size: 2.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+}
