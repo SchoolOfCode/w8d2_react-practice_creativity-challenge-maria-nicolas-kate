@@ -1,0 +1,13 @@
+Bird-counting app
+
+App title, pic of birds 
+
+Display a button that, when clicked, counts the number of birds that you have seen on a walk. 
+Display that number in a sentence on the page.
+
+Components: 
+    birdSeen button - that increments a count by 1 each time it is clicked.
+    notABird button - that decreases the count by 1 each time it is clicked.
+    birdCount - text showing count so far. 
+
+    
