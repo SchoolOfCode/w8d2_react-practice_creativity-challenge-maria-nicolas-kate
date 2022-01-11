@@ -5,14 +5,15 @@ import swanPic from "./Public/bird_swan.png";
 import { BirdSection } from "./Components/BirdSection";
 
 function App() {
-
   return (
     <div className="App">
       <h1>Bird counter</h1>
       <h1>🦆🦢🕊️🐧</h1>
-      <BirdSection image={magpiePic} bird="Magpie" />
-      <BirdSection image={cootPic} bird="Coot" />
-      <BirdSection image={swanPic} bird="Swan" />
+      <div className="gallery">
+        <BirdSection image={magpiePic} bird="Magpie" />
+        <BirdSection image={cootPic} bird="Coot" />
+        <BirdSection image={swanPic} bird="Swan" />
+      </div>
     </div>
   );
 }
