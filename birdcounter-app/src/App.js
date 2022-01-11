@@ -1,26 +1,18 @@
 import "./App.css";
-import { BirdButton } from "./Components/Button";
-import { useState } from "react";
+import magpiePic from "./Public/bird_magpie.png";
+import cootPic from "./Public/bird_coot.png";
+import swanPic from "./Public/bird_swan.png";
+import { BirdSection } from "./Components/BirdSection";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  function plus() {
-    setCount(count + 1);
-  }
-
-  function minus() {
-    setCount(count - 1);
-  }
 
   return (
     <div className="App">
       <h1>Bird counter</h1>
       <h1>🦆🦢🕊️🐧</h1>
-      <BirdButton text="➖" onClick={minus} />
-      <img src={require("./bird_magpie.png")} alt="magpie"></img>
-      <h2>Current bird count: {count} </h2>
-      <BirdButton text="➕" onClick={plus} />
+      <BirdSection image={magpiePic} bird="Magpie" />
+      <BirdSection image={cootPic} bird="Coot" />
+      <BirdSection image={swanPic} bird="Swan" />
     </div>
   );
 }
