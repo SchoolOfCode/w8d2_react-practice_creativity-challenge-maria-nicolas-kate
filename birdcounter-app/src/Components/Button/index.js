@@ -1,5 +1,5 @@
-import React from "react"; 
+import React from "react";
 
-export function BirdButton() {
-    return <button></button>
+export function BirdButton({ text, onClick }) {
+  return <button onClick={onClick}>{text}</button>;
 }
