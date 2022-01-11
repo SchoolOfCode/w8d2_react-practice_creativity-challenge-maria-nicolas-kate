@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-
 import { BirdButton } from "../Button";
 
-export function BirdSection({image, bird, addTotalBirds, deductTotalBirds}){
-    
+import "./index.css";
+
+export function BirdSection({image, bird, addTotalBirds, deductTotalBirds}){    
+
   const [count, setCount] = useState(0);
   const altText = `Nice photo of a ${bird}`;
 
@@ -17,11 +18,11 @@ export function BirdSection({image, bird, addTotalBirds, deductTotalBirds}){
   }
     
     return(
-        <article>
-            <BirdButton text="➖" onClick={() => {minus(); if(count>0)deductTotalBirds()}} />
+        <article className="gallery-item">            
             <img src={image} alt={altText}></img>
             <h2> {count < 0 ? 0: count} {count === 1 ? bird : bird + "s"} </h2>
-            <BirdButton text="➕" onClick={(e) => {plus(); addTotalBirds()}} />
+            <BirdButton className="btn" text="➖" onClick={() => {minus(); if(count>0)deductTotalBirds()}} />
+            <BirdButton className="btn" text="➕" onClick={(e) => {plus(); addTotalBirds()}} />
         </article>
         
     ) 
